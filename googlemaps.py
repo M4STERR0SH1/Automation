@@ -17,7 +17,7 @@ sleep(2)
 
 def searchplace():
     Place = driver.find_element(By.ID, "searchboxinput")
-    Place.send_keys("Tiruchirappalli")
+    Place.send_keys("Udaipur")
     Submit = driver.find_element(By.ID, "searchbox-searchbutton")
     Submit.click()
 
@@ -34,7 +34,7 @@ def find():
     sleep(1)
     wait = WebDriverWait(driver, 5)
     find_input = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div[3]/div[9]/div[3]/div[1]/div[2]/div/div[3]/div[1]/div[1]/div[2]/div[1]/div/input")))
-    find_input.send_keys("Tirunelveli")
+    find_input.send_keys("Jodhpur")
     find_input.send_keys(Keys.ENTER)
     sleep(1)
 
